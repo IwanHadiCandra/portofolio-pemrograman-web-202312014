@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="background-color: #f0f8ff; margin: 20px; font-family: Arial, sans-serif;">
+
+    <!-- Gambar logo kampus -->
+    <div style="text-align: center;">
+        <img src="stitek2.jpg" alt="Logo Kampus">
+    </div>
+
+    <!-- Judul Halaman -->
+    <h1 style="text-align: center;">Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <!-- Formulir Pendaftaran -->
+    <form action="" method="post">
+
+            <!-- Data Pribadi -->
+        <fieldset>
+            <legend>Data Pribadi</legend>
+
+            <!-- Input Nama -->
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required><br><br>
+
+            <!-- Input Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Contoh: budi@email.com" required><br><br>
+
+            <!-- Jenis Kelamin -->
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+            <label for="wanita">Wanita</label><br><br>
+        </fieldset>
+
+        <!-- Hobi -->
+        <fieldset>
+            <legend>Hobi</legend>
+            <!-- Minimal 2 pilihan -->
+            <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+            <label for="membaca">Membaca</label><br>
+
+            <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br>
+
+            <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+            <label for="musik">Musik</label><br>
+
+            <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+            <label for="traveling">Traveling</label><br><br>
+        </fieldset>
+
+        <!-- Pilihan Jurusan -->
+        <fieldset>
+            <legend>Pilihan Jurusan</legend>
+            <label for="jurusan">Pilih Jurusan:</label><br>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Bisnis Digital">Bisnis Digital</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Alamat -->
+        <fieldset>
+            <legend>Alamat</legend>
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder="Contoh: Jl. S. Parman, Kota Bontang"></textarea><br><br>
+        </fieldset>
+
+        <!-- Tombol Submit -->
+        <input type="submit" value="Kirim Formulir" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+    </form>
+
+    <!-- Link ke Halaman Informasi Kampus -->
+    <p style="margin-top: 20px;">
+        <a href="https://www.kampuscontoh.ac.id" target="_blank">Kunjungi halaman informasi kampus</a>
+    </p>
+
+  
+    
+</body>
+</html>
